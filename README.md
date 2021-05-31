@@ -19,13 +19,13 @@ src
 │   ├── GradientsList.js
 │   └── GradientsSelect.js
 ├── context
-|   ├── FilterContext.js
-|   └── GradientContext.js
+│   ├── FilterContext.js
+│   └── GradientContext.js
 ├── hooks
-|   └── useIsMouted.js
+│   └── useIsMouted.js
 ├── pages
-|   ├── FullScreen.js
-|   └── Home.js
+│   ├── FullScreen.js
+│   └── Home.js
 ├── reducers
-|   └── gradientsReducer.js
+│   └── gradientsReducer.js
 ```
