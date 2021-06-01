@@ -22,11 +22,11 @@ const GradientsHeader = ({ children, loading }) => {
   const handlePrevClick = () => {
     setRandomGradient(randomGradient === 0 ? length - 1 : randomGradient - 1)
   }
-  const style = {
-    backgroundImage: loading ? '' :`linear-gradient(to right, ${gradients[randomGradient].start}, ${gradients[randomGradient].end})`
-  }
+ 
   return (
-    <header className="text-center bg-dark text-white py-5 mb-5" style={style}>
+    <header className="text-center bg-dark text-white py-5 mb-5" style={{
+      backgroundImage: loading ? '' :`linear-gradient(to right, ${gradients[randomGradient].start}, ${gradients[randomGradient].end})`
+    }}>
       {children}
       <button
         aria-label="Clicker pour afficher le dégradé précédant"

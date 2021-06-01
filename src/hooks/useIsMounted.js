@@ -7,7 +7,7 @@ export const useIsMounted = () => {
     return () => {
       isMounted.current = false;
     };
-  }, [isMounted]); // Using an empty dependency array ensures this only runs on unmount
+  }, [isMounted]);
 
   return isMounted
 }
